@@ -1,3 +1,3 @@
 # KOKOA CLONING FOR THE FIRST TIME
 
-html css practice
+just started studying html&css

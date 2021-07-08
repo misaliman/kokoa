@@ -1,0 +1,122 @@
+#chatting {
+  background-color: darkseagreen;
+}
+#chatting .chat-header__column,
+#chatting .status-bar {
+  top: 0;
+
+  background-color: darkseagreen;
+}
+#chatting .status-bar {
+  height: 30px;
+}
+.chat-header {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: darkseagreen;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  position: fixed;
+  align-items: center;
+}
+.chat-header__column {
+  z-index: 1;
+}
+.status-bar {
+  z-index: 2;
+}
+.chat-header__column:first-child {
+  margin-right: auto;
+}
+.chat-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.chat-header__column {
+  width: 33%;
+}
+.chat-header__column:nth-child(2) {
+  text-align: center;
+}
+.main-screen {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+.timestamp {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  padding: 10px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.message__bubble {
+  background-color: white;
+  padding: 5px 12px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+.message__name {
+  opacity: 0.8;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+.message__time {
+  opacity: 0.8;
+  font-size: 12px;
+
+  margin-bottom: 10px;
+}
+.message-row--own {
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.message-row--own .message__bubble {
+  background-color: yellow;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+}
+.message-row--own .message-row-info {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: floralwhite;
+  padding: 5px 25px;
+  align-items: center;
+}
+.reply input {
+  width: 100%;
+  height: 30px;
+}
+.reply .reply-column:first-child {
+  width: 10%;
+}
+.reply .reply-column:last-child {
+  display: flex;
+
+  width: 90%;
+}

@@ -1,0 +1,44 @@
+.user-component {
+  display: flex;
+}
+.user-component__column {
+  display: flex;
+  align-items: center;
+
+  padding: 25px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.user-component__pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.user-component__text {
+  color: black;
+  font-size: 20px;
+
+  align-items: center;
+  margin-left: 10px;
+}
+.user-component__text :not(.user-component__subtext) {
+  font-weight: bold;
+}
+.user-component__subtext {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  width: 100%;
+  margin-top: 10px;
+}
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-component__time {
+  display: block;
+  margin-bottom: 20px;
+}
